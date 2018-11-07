@@ -1,0 +1,103 @@
+{% load static %}
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  <link rel="stylesheet" href="{% static 'index/css/IcoMoon.css' %}">
+  <link rel="stylesheet" href="{% static 'index/css/index.css' %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="dim-dark" onclick="handleClickDim()"></div>
+
+  <header>
+    <aside>
+      <div class="wrap">
+        <div class="aside-logo clearfix">
+          <img class="logo-img" src="//contents.sixshop.com/uploadedFiles/36396/default/image_1524212612385.png">
+          <a href=""><span class="icon icon-user"></span></a>
+        </div>
+
+        <div class="aside-form">
+          <form action="">
+            <span class="icon icon-search"></span>
+            <input type="text" name="" id="">
+          </form>
+        </div>
+
+        <div class="aside-items">
+          <div class="aside-menu-item">ABOUT</div>
+          <div class="aside-menu-item">SHOP</div>
+          <div class="aside-menu-item">LOOKBOOK</div>
+          <div class="aside-menu-item">PEOPLE</div>
+          <div class="aside-menu-item">COLLABO</div>
+          <div class="aside-menu-item">COMMUNITY</div>
+          <div>
+            <div><a href=""><span class="icon icon-facebook"></span></a></div>
+            <div><a href=""><span class="icon icon-instagram"></span></a></div>
+            <div><a href=""><span class="icon icon-blogger"></span></a></div>
+            <div><a href=""><span class="icon icon-pencil2"></span></a></div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="header-hamberger" onclick="handleClickHamburger()">
+      <span class="icon icon-paragraph-justify"></span>
+    </div>
+
+    <div class="header-logo-img">
+      <img class="logo-img" src="//contents.sixshop.com/uploadedFiles/36396/default/image_1524212612385.png">
+    </div>
+
+    <nav>
+      <div class="left-header-menu">
+        <div><a href=""><span class="icon icon-facebook"></span></a></div>
+        <div><a href=""><span class="icon icon-instagram"></span></a></div>
+        <div><a href=""><span class="icon icon-blogger"></span></a></div>
+        <div><a href=""><span class="icon icon-pencil2"></span></a></div>
+      </div>
+      <div class="center-header-menu">
+        <div><a href="#">ABOUT</a></div>
+        <div><a href="#">SHOP</a></div>
+        <div><a href="#">LOOKBOOK</a></div>
+        <div><a href="#">PEOPLE</a></div>
+        <div><a href="#">COLLABO</a></div>
+        <div><a href="#">COMMUNITY</a></div>
+      </div>
+      <div class="right-header-menu">
+        <div><a href=""><span class="icon icon-search"></span></a></div>
+        <div><a href=""><span class="icon icon-user"></span></a></div>
+        <div><a href=""><span class="icon icon-cart"></span></a></div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="header-blank"></div>
+
+  <section class="section-001">
+    <img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/default/image_1541381205688_2500.jpg" alt="">
+  </section>
+
+  <section class="section-002">
+    <div class="section-002-container">
+      <div class="section-002-box-001"><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/default/image_1540973307393_750.jpg" alt=""></div>
+      <div class="section-002-box-002">
+        <div class="section-002-picture-002"><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/default/image_1540973310182_750.jpg" alt=""></div>
+        <div class="section-002-picture-003"><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/default/image_1541407270753_750.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+</body>
+<script>
+  function handleClickHamburger() {
+    $('aside').css('width', '80%');
+    $('.dim-dark').css('display', 'block');
+  }
+
+  function handleClickDim() {
+    $('aside').css('width', '0');
+    $('.dim-dark').css('display', 'none');
+  }
+</script>
+</html>
